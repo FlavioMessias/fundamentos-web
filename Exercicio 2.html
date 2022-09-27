@@ -10,39 +10,72 @@
 
 <head>
     <body>
-        <h1>Flavio Messias</h1>
-        <ul id="menu">
-            <li><a href="fundamentos web-1.html">Home</a> </li>
-            <li><a href="https://github.com/FlavioMessias" target="_blank">GitHub</a> </li>
-            <li><a href="https://www.linkedin.com/in/flaviohmneto/" target="_blank">LinkedIn</a> </li>
-        </ul>
-        <img class="br180" height="400" width="400" src="Assets/img/flavio.png" alt="Foto do criador da pagina">
-        <p>
-            Sejam muito bem vindos!!!
-        </p>
-        <p>
-            Meu nome é Flavio Hilario Messias Neto, Nasci e cresci na cidade de Bauru, no interior do estado de São Paulo, com 19 anos me mudei para a cidade de Campinas a fim de conhecer novas pessoas e lugares.
-            Minha curiosidade é insaciavel e por isso me vejo em constante movimento em busca de novos conhecimentos e de novas conexões.
-        </p>
-        <p>
-            Para se conectar e me conhecer melhor é só clicar nos links de contato acima ou cadastrar seus dados abaixo!
-        </p>
+        <nav class="margin mt28">
+            <h1>Flavio Messias</h1>
+            <ul id="menu">
+                <li><a href="fundamentos web-1.html">Home</a> </li>
+                <li><a href="https://github.com/FlavioMessias" target="_blank">GitHub</a> </li>
+                <li><a href="https://www.linkedin.com/in/flaviohmneto/" target="_blank">LinkedIn</a> </li>
+            </ul>
+            <img class="br180 alinhamento" height="300" width="300" src="Assets/img/flavio.png" alt="Foto do criador da pagina">
+        </nav>
+       
+        <hr>
 
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
-            <br>
-            <br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email">
-            <br>
-            <br>
-            <label for="assunto">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-            <br>
-            <br>
-            <button>Enviar</button>
-        </form>
-  
+        <main>
+            <section class="margin">
+                <div>
+                    <p>
+                        Sejam muito bem vindos!!!
+                    </p>
+                    <p>
+                        Meu nome é Flavio Hilario Messias Neto, Nasci e cresci na cidade de Bauru, no interior do estado de São Paulo, com 19 anos me mudei para a cidade de Campinas a fim de conhecer novas pessoas e lugares.
+                        Minha curiosidade é insaciavel e por isso me vejo em constante movimento em busca de novos conhecimentos e de novas conexões.
+                    </p>
+                    <p>
+                        Para se conectar e me conhecer melhor é só clicar nos links de contato acima ou cadastrar seus dados abaixo !
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <main class="contato">
+            <section>
+              <h3 class="margin">Contato</h2>
+              <form>
+                <div class="margin margintop">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text" placeholder="Insira o seu nome completo" onkeyup="validaNome()" required>
+                    <div id="txtNome"></div>
+                  </div>
+            
+                  <div class="margin margintop">
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="email" type="text" placeholder="Insira o seu e-mail" onkeyup="validaEmail2()" required>
+                    <div id="txtEmail"></div>
+                  </div>
+
+                
+                
+                <div class="margin margintop">
+                  <label for="mensagem">Mensagem:</label>
+                </div>
+
+                <div class="margin margintop">
+                    <textarea id="mensagem" rows="8" cols="45" placeholder="Deixe sua mensagem" onkeyup="validaMensagem()"></textarea>
+                    <div id="txtMsg"></div>
+                </div>
+                
+                <button class="margin margintop" type="submit" onclick="enviarForm()">Enviar</button>
+              </form>
+            </section>
+        </main>
+
+
+<script src="assets/scripts/script.js"></script>
+
     </body>   
+
 </head>
+
+</html>

@@ -7,9 +7,9 @@ body {
 
 .container {
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
+    flex-flow: wrap;
+    justify-content: left;
+    align-items: auto;
 }
 
 #menu li {
@@ -28,8 +28,8 @@ body {
 }
 
 .wh {
-    height: 300px;
-    width: 600px
+    height: 20vw;
+    width: 50vw
 }
 
 .p25 {
@@ -42,8 +42,26 @@ body {
 
 .ref {
     font-size: 20px;
+    text-align: left;
+    margin-right: auto;
+    
 }
 
 .br180 {
-    border-radius: 180px;
+    border-radius: 200px;
 }
+
+.margin {
+    margin-left: 1rem;
+}
+
+.margintop{
+    margin-top: 8px;
+}
+
+.mt28 {
+    margin-top: 28px;
+}
+  .alinhamento {
+  align-items: center;
+  }
